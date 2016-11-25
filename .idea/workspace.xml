@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="506122ae-9c26-48ce-b68d-51a4745e66c7" name="Default" comment="First working version!">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="506122ae-9c26-48ce-b68d-51a4745e66c7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/stateHandlers.js" afterPath="$PROJECT_DIR$/js/stateHandlers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/speechAssets/Utterances.txt" afterPath="$PROJECT_DIR$/speechAssets/Utterances.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -580,12 +577,20 @@
       <option name="presentableId" value="Default" />
       <updated>1479928796560</updated>
       <workItem from="1479928803773" duration="363000" />
-      <workItem from="1480038397291" duration="2026000" />
+      <workItem from="1480038397291" duration="2096000" />
     </task>
+    <task id="LOCAL-00001" summary="First working version!">
+      <created>1480041099455</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1480041099455</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2389000" />
+    <option name="totallyTimeSpent" value="2459000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
