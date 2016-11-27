@@ -1,0 +1,15 @@
+<project name="skill-wholovesme" basedir="." default="build">
+    <property name="build.dir" value="BUILD"/>
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="build" depends="clean">
+        <mkdir dir="${build.dir}"/>
+
+	<zip destfile="${build.dir}/wholovesme.zip">
+	    <zipfileset dir="js/" />
+	</zip>
+    </target>
+</project>
