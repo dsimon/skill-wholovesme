@@ -8,6 +8,10 @@
     <target name="build" depends="clean">
         <mkdir dir="${build.dir}"/>
 
+	<exec executable="/usr/local/bin/npm" dir="js/">
+		<arg value="install" />
+	</exec>
+
 	<zip destfile="${build.dir}/wholovesme.zip">
 	    <zipfileset dir="js/" />
 	</zip>
