@@ -20,11 +20,13 @@ var stateHandlers = {
             //  Change state to START_MODE
             this.handler.state = constants.states.START_MODE;
 
-            var message = 'Welcome to Who Loves Me. You can say, play the audio to begin.';
-            var reprompt = 'You can say, play the audio, to begin.';
+            controller.play.call(this);
 
-            this.response.speak(message).listen(reprompt);
-            this.emit(':responseReady');
+            // var message = 'Welcome to Who Loves Me. You can say, play the audio to begin.';
+            // var reprompt = 'You can say, play the audio, to begin.';
+            //
+            // this.response.speak(message).listen(reprompt);
+            // this.emit(':responseReady');
         },
         'PlayAudio' : function () {
             if (!this.attributes['playOrder']) {
@@ -78,21 +80,22 @@ var stateHandlers = {
              *      Ask user if he/she wants to resume from last position.
              *      Change state to RESUME_DECISION_MODE
              */
-            var message;
-            var reprompt;
-            if (this.attributes['playbackFinished']) {
-                this.handler.state = constants.states.START_MODE;
-                message = 'Welcome to Who Loves Me. You can say, play the audio to begin.';
-                reprompt = 'You can say, play the audio, to begin.';
-            } else {
-                this.handler.state = constants.states.RESUME_DECISION_MODE;
-                message = 'You were listening to ' + audioData[this.attributes['playOrder'][this.attributes['index']]].title +
-                    ' Would you like to resume?';
-                reprompt = 'You can say yes to resume or no to play from the top.';
-            }
-
-            this.response.speak(message).listen(reprompt);
-            this.emit(':responseReady');
+            // var message;
+            // var reprompt;
+            // if (this.attributes['playbackFinished']) {
+            //     this.handler.state = constants.states.START_MODE;
+            //     message = 'Welcome to Who Loves Me. You can say, play the audio to begin.';
+            //     reprompt = 'You can say, play the audio, to begin.';
+            // } else {
+            //     this.handler.state = constants.states.RESUME_DECISION_MODE;
+            //     message = 'You were listening to ' + audioData[this.attributes['playOrder'][this.attributes['index']]].title +
+            //         ' Would you like to resume?';
+            //     reprompt = 'You can say yes to resume or no to play from the top.';
+            // }
+            //
+            // this.response.speak(message).listen(reprompt);
+            // this.emit(':responseReady');
+            controller.play.call(this);
         },
         'PlayAudio' : function () { controller.play.call(this) },
         'AMAZON.NextIntent' : function () { controller.playNext.call(this) },
